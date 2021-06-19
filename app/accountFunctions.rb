@@ -1,4 +1,4 @@
-require_relative "../accounts/accountTypes"
+require_relative 'accountTypes'
 
 puts "Informe Saldo disponível: R$"
 accountBalance = gets.chomp.to_f #simula uma informação do banco de dados

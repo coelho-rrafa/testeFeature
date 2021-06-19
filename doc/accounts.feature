@@ -15,10 +15,11 @@ Cenário: Deu ruim não tenho saldo
     Então vejo a mensagem "Saldo insuficiente para saque :("
     E meu saldo final deve ser R$ 0
 
-Cenário: Tenho saldo mas não o suficiente
+Cenário: Quando o valor do saque é divergente ao informado
     Dado que eu tenho R$ 500 em minha conta corrente
-    Quando faço um saque de R$ 501
-    Então vejo a mensagem "Saldo insuficiente para saque :("
+    Quando faço um saque de R$ 100
+    E informo o valor de R$110
+    Então vejo a mensagem "Valor divergente ao informado! Transação Cancelada!"
     E meu saldo final deve ser R$ 500
 
 Cenário: Limite por saque :(
